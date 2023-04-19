@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monst - NextJs Tailwind</title>
+    <link rel="icon" href="images/favicon.svg">
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Wow Animate -->
+    <link rel="stylesheet" href="css/animate wow.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- MediaQuery -->
+    <link rel="stylesheet" href="css/mediaquery.css">
+</head>
+
+<body class="loading mont">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="load">
+            <img src="images/favicon.svg" alt="">
+            <h3>Monst</h3>
+        </div>
+    </div>
+    <!-- back-to-top -->
+    <a href="javascript:void(0);" id="back-to-top">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+    <!-- Header -->
+    <header class="position-absolute w-100">
+        <!-- <div class="nav-bar d-none d-lg-block">
+            <div class="container py-2 border-bottom">
+                <div class="row">
+                    <nav class="d-flex">
+                        <div class="contact col-12 col-md-6 d-flex d-md-block justify-content-between">
+                            <a class="mail me-3" href="mailto:yourmail@gmail.com"><i
+                                    class="bi bi-envelope-fill me-2 text-primary"></i>yourmail@gmail.com</a>
+                            <a class="number" href="tel:+919896949392"><i
+                                    class="bi bi-telephone-fill me-2 text-primary"></i>+919896949392</a>
+                        </div>
+                        <div class="socials d-none col-md-6 d-md-flex justify-content-end">
+                            <a target="_blank" href="https://twitter.com"><i
+                                    class="bi bi-twitter me-4 text-blue-400"></i></a>
+                            <a target="_blank" href="https://facebook.com"><i
+                                    class="bi bi-facebook me-4 text-blue-400"></i></a>
+                            <a target="_blank" href="https://linkedin.com"><i
+                                    class="bi bi-linkedin me-4 text-blue-400"></i></a>
+                            <a target="_blank" href="https://youtube.com"><i
+                                    class="bi bi-youtube text-blue-400"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> -->
+        <div class="menu" id="navbar_top">
+            <div class="container">
+                <div class="row">
+                    <nav class="py-3 d-flex justify-content-between align-lg-items-center navbar navbar-expand-lg">
+                        <a href="index.html" class="navbar-brand logo d-inline-block">
+                            <img src="images/monst-logo.svg" alt="logo" class="img-fluid">
+                        </a>
+                        <button class="navbar-toggler bg-transparent border-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list fs-5"></i>
+                        </button>
+                        <div class="justify-content-center collapse navbar-collapse mt-3 mt-lg-0"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav d-lg-flex align-lg-items-center justify-content-center w-100">
+                                <li class="nav-item py-3 dropdown">
+                                    <a class="nav-link w-100" href="javascript:void(0);" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Home</a>
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="dropdown-item text-secondary" href="#">Landing page 1</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Landing page 2</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Landing page 3</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Landing page 4</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Landing page 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-3 ms-lg-5 ms-xl-5">
+                                    <a class="nav-link w-100" href="javascript:void(0);">About Us</a>
+                                </li>
+                                <li class="nav-item py-3 ms-lg-5 ms-xl-5">
+                                    <a class="nav-link w-100" href="javascript:void(0);">Service</a>
+                                </li>
+                                <li class="nav-item py-3 ms-lg-5 ms-xl-5 dropdown">
+                                    <a class="nav-link w-100" href="javascript:void(0);" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Company</a>
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="dropdown-item text-secondary" href="#">Portfolio</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Team</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Testimonials</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Pricing</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Faqs</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">404</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-3 ms-lg-5 ms-xl-5 dropdown">
+                                    <a class="nav-link w-100" href="javascript:void(0);" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Blog</a>
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="dropdown-item text-secondary" href="#">Catagory 1</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Catagory 2</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Single 1</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Single 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-3 ms-lg-5 ms-xl-5">
+                                    <a class="nav-link w-100" href="javascript:void(0);">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-btn text-end d-none d-lg-block">
+                            <a href="#" class="text-primary border-btn me-1" data-bs-toggle="modal"
+                                data-bs-target="#login">Log In</a>
+                            <a href="#" class="blue-400 text-white border-0 btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#signup">Sign Up</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Slider -->
+        <section class="slider">
+            <!-- <div class="slider-back"> -->
+            <div class="container text-center mb-6r">
+                <div class="slider-text">
+                    <h1 class="text-dark fw-bold mb-3 wow fadeIn animated">Committed to People<br>Committed <span
+                            class="text-primary">to
+                            the Future</span></h1>
+                    <p class="text-gray mont wow fadeIn animated">
+                        <span class="iam">We are <strong class="text-primary">Monst</strong>, a Creative
+                            Design</span>
+                        <span class="text"></span>
+                    </p>
+                    <div class="slider-btn">
+                        <a href="#" class="blue-400 text-white border-0 btn-primary me-1 wow fadeIn animated">Key
+                            Features</a>
+                        <a href="#" class="bg-white border-0 white-btn wow fadeIn animated">How We Work?</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Image -->
+            <div class="mx-auto position-relative slider-img">
+                <img src="images/pattern.png" alt="slider-design" class="img-fluid">
+                <div class="position-absolute dashboard">
+                    <img src="images/dashboard.png" alt="dashboard" class="img-fluid">
+                </div>
+            </div>
+            <!-- Counter -->
+            <div class="container px-3 counter mt-5">
+                <div class="row justify-content-between">
+                    <div class="col-6 col-lg-3 py-3  py-lg-0 d-flex align-items-center count-box wow fadeIn animated"
+                        data-wow-delay=".2s">
+                        <div class="bg-light d-flex justify-content-center align-items-center text-primary count-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="count-text ms-4">
+                            <div class="count-no fs-4 fw-bold text-dark">
+                                <span>+</span>
+                                <span data-count="950" class="count-digit">0</span>
+                            </div>
+                            <p class="text-gray mont">Annual Partner</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 py-3  py-lg-0 d-flex align-items-center count-box wow fadeIn animated"
+                        data-wow-delay=".4s">
+                        <div class="bg-light d-flex justify-content-center align-items-center text-primary count-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="count-text ms-4">
+                            <div class="count-no fs-4 fw-bold text-dark">
+                                <span>+</span>
+                                <span data-count="58" class="count-digit">0</span>
+                                <span>k</span>
+                            </div>
+                            <p class="text-gray mont">Projects Done</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 py-3  py-lg-0 d-flex align-items-center count-box wow fadeIn animated"
+                        data-wow-delay=".6s">
+                        <div class="bg-light d-flex justify-content-center align-items-center text-primary count-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="count-text ms-4">
+                            <div class="count-no fs-4 fw-bold text-dark">
+                                <span>+</span>
+                                <span data-count="500" class="count-digit">0</span>
+                            </div>
+                            <p class="text-gray mont">Happy Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 py-3  py-lg-0 d-flex align-items-center count-box wow fadeIn animated"
+                        data-wow-delay=".8s">
+                        <div class="bg-light d-flex justify-content-center align-items-center text-primary count-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="count-text ms-4">
+                            <div class="count-no fs-4 fw-bold text-dark">
+                                <span>+</span>
+                                <span data-count="300" class="count-digit">0</span>
+                            </div>
+                            <p class="text-gray mont">Research Work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- Features -->
+        <section class="features sp-4 overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 feat-main-content wow fadeIn animated" data-wow-delay=".3s">
+                        <div class="heading mb-3">
+                            <span class="badge text-primary rounded-pill fw-semibold mont wow fadeInDown"
+                                data-wow-delay=".9s">Why choose us</span>
+                            <h2 class="text-dark fw-bold wow fadeIn fs-2" data-wow-delay=".3s">Key Features</h2>
+                        </div>
+                        <div class="feature-box d-flex py-3 wow fadeIn" data-wow-delay=".5s">
+                            <div class="feature-icon text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="feat-content">
+                                <h3 class="fw-semibold mb-2 fs-5">Expand Your Reach</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-box d-flex py-3 wow fadeIn" data-wow-delay=".7s">
+                            <div class="feature-icon text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                                </svg>
+                            </div>
+                            <div class="feat-content">
+                                <h3 class="fw-semibold mb-2 fs-5">Annualized Growth</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-box d-flex py-3 wow fadeIn" data-wow-delay=".9s">
+                            <div class="feature-icon text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="feat-content">
+                                <h3 class="fw-semibold mb-2 fs-5">Book Your Providers</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0 position-relative feat-img">
+                        <div class="wow fadeIn animated" data-wow-delay=".5s">
+                            <img src="images/feature-img.png" class="img-fluid main-img" alt="">
+                            <img src="images/blob-tear.svg" class="img-fluid position-absolute ele-1" alt="">
+                            <img src="images/blob-tear.svg" class="img-fluid position-absolute ele-2" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How we Work -->
+        <section class="work bg-light sp-8">
+            <div class="container">
+                <div class="row">
+                    <div class="sect-title d-flex flex-wrap align-items-center mb-5">
+                        <div class="col-lg-6 mb-3 mb-lg-0">
+                            <h2 class="fw-bold wow fadeInDown animated">
+                                <span>We are</span>
+                                <span class="text-primary"> awesome team</span>
+                                <br>
+                                <span>for your business dream</span>
+                            </h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="wow fadeIn animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                luctus eget justo et
+                                iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum
+                                vitae ligula id imperdiet.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0 wow fadeIn animated" data-wow-delay=".3s">
+                        <div class="card p-5 border-0 text-center">
+                            <span class="work-no rounded-pill fw-bold text-center mx-auto">1</span>
+                            <img src="images/eating.svg" class="card-img-top my-3" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-2">Project Initialization</h5>
+                                <p class="card-text">Project initiation ensures that you lay a strong foundation for a
+                                    new project in your company our team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0 wow fadeIn animated" data-wow-delay=".5s">
+                        <div class="card p-5 border-0 text-center">
+                            <span class="work-no rounded-pill fw-bold text-center mx-auto">2</span>
+                            <img src="images/space.svg" class="card-img-top my-3" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-2">Project planning</h5>
+                                <p class="card-text">A project plan is essential to keep everything related to the
+                                    project organized, methodical, and on track.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-4 wow fadeIn animated" data-wow-delay=".7s">
+                        <div class="card p-5 border-0 text-center">
+                            <span class="work-no rounded-pill fw-bold text-center mx-auto">3</span>
+                            <img src="images/tasks.svg" class="card-img-top my-3" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-2">Project organization</h5>
+                                <p class="card-text">Moving forward you will be able to keep yourself and your team on
+                                    track, and address challenges early.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="service sp-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="sect-title text-center text-xl-start mb-5 pe-xl-5 me-xl-4">
+                            <h2 class="fw-bold mb-3 wow fadeIn animated" data-wow-delay=".3s">
+                                <span>Simple Solution for</span>
+                                <span class="text-primary"> Complex</span>
+                                <br>
+                                <span>Connections</span>
+                            </h2>
+                            <p class="wow fadeIn animated" data-wow-delay=".9s">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed luctus eget justo et
+                                iaculis.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <img src="images/img-1.jpg" alt="">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <div>
+                                                    <h3 class="fw-semibold">
+                                                        <a href="#" class="text-decoration-none">User Growth</a>
+                                                    </h3>
+                                                    <p class="text-gray mt-2 mont">Havard university</p>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="border-btn">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <img src="images/img-2.jpg" alt="">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <div>
+                                                    <h3 class="fw-semibold">
+                                                        <a href="#" class="text-decoration-none">Products</a>
+                                                    </h3>
+                                                    <p class="text-gray mt-2 mont">Cocacola,.</p>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="border-btn">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <img src="images/img-3.jpg" alt="">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <div>
+                                                    <h3 class="fw-semibold">
+                                                        <a href="#" class="text-decoration-none">Event</a>
+                                                    </h3>
+                                                    <p class="text-gray mt-2 mont">Oxford University</p>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="border-btn">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <img src="images/img-4.jpg" alt="">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <div>
+                                                    <h3 class="fw-semibold">
+                                                        <a href="#" class="text-decoration-none">Shopping</a>
+                                                    </h3>
+                                                    <p class="text-gray mt-2 mont">Alibaba Co</p>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="border-btn">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut text-primary" href="#recipeCarousel"
+                                role="button" data-bs-slide="prev">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut text-primary" href="#recipeCarousel"
+                                role="button" data-bs-slide="next">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing -->
+        <section class="price sp-8">
+            <div class="container">
+                <div class="row">
+                    <div class="sect-title text-center">
+                        <h2 class="fw-bold mb-3 mx-auto wow fadeIn animated" data-wow-delay=".2s">
+                            <span>Start saving time today and</span>
+                            <span class="text-primary"> choose </span>
+                            <span>your best plan</span>
+                        </h2>
+                        <p class="mx-auto wow fadeInDown animated" data-wow-delay=".5s">Best for freelance developers
+                            who need to save their time</p>
+                    </div>
+                    <div class="d-flex flex-wrap price-main-box">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-2 px-2">
+                            <div class="text-center px-3 bg-white price-box wow fadeIn animated" data-wow-delay=".2s">
+                                <img src="images/startup.svg" class="mx-auto mb-4" alt="">
+                                <h3 class="fw-bold mb-2">Startup</h3>
+                                <span class="text-primary fw-bold">$45.99</span>
+                                <p class="mt-2 text-gray">user per month</p>
+                                <div class="d-flex flex-column align-items-center price-content">
+                                    <ul class="text-gray text-start mont">
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>3 Emails</span>
+                                        </li>
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>1 Datebases</span>
+                                        </li>
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>Unlimited Domains</span>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>10 GB Storage</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-primary py-3 px-4">Start Free Trial</a>
+                                    <a href="#" class="border-btn py-3 px-4 text-secondary ">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-2 px-2">
+                            <div class="text-center px-3 bg-primary price-box p-box wow fadeIn animated"
+                                data-wow-delay=".4s">
+                                <img src="images/agency.svg" class="mx-auto mb-4" alt="">
+                                <h3 class="fw-bold mb-2 text-white">Agency</h3>
+                                <span class="text-white fw-bold">$65.99</span>
+                                <p class="mt-2 text-white">user per month</p>
+                                <div class="d-flex flex-column align-items-center price-content">
+                                    <ul class="text-white text-start mont">
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>6 Emails</span>
+                                        </li>
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>4 Datebases</span>
+                                        </li>
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>Unlimited Domains</span>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>35 GB Storage</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-primary py-3 text-primary px-4">Start Free Trial</a>
+                                    <a href="#" class="border-btn py-3 px-4 text-white">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 px-2 mb-2">
+                            <div class="text-center px-3 bg-white price-box wow fadeIn animated" data-wow-delay=".6s">
+                                <img src="images/enterprise.svg" class="mx-auto mb-4" alt="">
+                                <h3 class="fw-bold mb-2">Enterprice</h3>
+                                <span class="text-primary fw-bold">$85.99</span>
+                                <p class="mt-2 text-gray">user per month</p>
+                                <div class="d-flex flex-column align-items-center price-content">
+                                    <ul class="text-gray text-start mont">
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>12 Emails</span>
+                                        </li>
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>8 Datebases</span>
+                                        </li>
+                                        <li class="list-unstyled mb-75">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>Unlimited Domains</span>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <svg class="w-6 h-6 mr-2 text-green-500 me-2"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>50 GB Storage</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-primary py-3 px-4">Start Free Trial</a>
+                                    <a href="#" class="border-btn py-3 px-4 text-secondary ">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter -->
+        <section class="newsletter sp-8">
+            <div class="container">
+                <div class="position-relative news-main-box ">
+                    <div class="mx-auto text-center new-box d-flex flex-column align-items-center">
+                        <div class="sect-title text-center">
+                            <h2 class="fw-bold mb-3 mx-auto wow fadeIn animated">
+                                <span>Subscribe now to</span>
+                                <span class="text-primary"> Our Newsletter </span>
+                                <span>and get the Coupon code.</span>
+                            </h2>
+                            <p class="mx-auto wow fadeIn animated" data-wow-delay=".3s">All your information is
+                                completely confidential</p>
+                        </div>
+                        <form method="get">
+                            <div class="p-3 bg-white d-flex flex-wrap mx-auto rounded-3 mail-box wow fadeIn animated"
+                                data-wow-delay=".5s">
+                                <div class="col-md-8 d-flex me-md-4 mb-md-0 input-box">
+                                    <svg class="h-6 w-6 my-auto text-secondary" xmlns="http://www.w3.org/2000/svg"
+                                        viewbox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <input type="email" class="text-gray fw-semibold w-100 py-3"
+                                        placeholder="Type your e-mail">
+                                </div>
+                                <button type="submit" class="btn-primary fw-600">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="sp-8 wow fadeIn animated" data-wow-delay=".3s">
+        <div class="container">
+            <div class="row text-center text-lg-start">
+                <div class="w-2 mpx-3">
+                    <a href="index.html" class="navbar-brand logo">
+                        <img src="images/monst-logo.svg" alt="logo" class="img-fluid">
+                    </a>
+                </div>
+                <div class="w-4 mpx-3">
+                    <p class="text-gray mont">Helping you <strong>maximize</strong> operations management with
+                        digitization</p>
+                </div>
+                <div class="w-2 mpx-3">
+                    <p class="mb-2 mb-lg-3 text-dark fw-bold pop">Office</p>
+                    <p class="text-gray">359 Hidden Valley Road, NY</p>
+                </div>
+                <div class="w-2 mpx-3">
+                    <p class="mb-2 mb-lg-3 text-dark fw-bold pop">Contacts</p>
+                    <p class="text-gray">(+01) 234 568</p>
+                    <p class="text-gray">contact@monst.com</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between copyright">
+                <p class="text-gray">
+                    © 2022. All rights reserved. Designed by <a href="index.html"
+                        class="text-blue-400 text-decoration-none">Pranav</a>
+                </p>
+                <div class="order-first order-lg-last mb-4 mb-lg-0">
+                    <a class="d-inline-block px-2" href="https://facebook.com" target="_blank">
+                        <img src="images/facebook-blue.svg" alt="">
+                    </a>
+                    <a class="d-inline-block px-2" href="https://twitter.com" target="_blank">
+                        <img src="images/twitter-blue.svg" alt="">
+                    </a>
+                    <a class="d-inline-block px-2" href="https://instagram.com" target="_blank">
+                        <img src="images/instagram-blue.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="fs-5 fw-semibold">Log In to your account</div>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="mb-3">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label for="remember" class="form-check-label">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Log In</button>
+                        <p class="mt-3">Don't have an account? <a href="javascript:void(0);" data-bs-target="#signup"
+                                data-bs-toggle="modal">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="fs-5 fw-semibold">Create an account</div>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username*</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Create Password*</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Confirm Password*</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <button type="submit" class="btn-primary">Sign Up</button>
+                        <p class="mt-3">Already have an account? <a href="javascript:void(0);" data-bs-target="#login"
+                                data-bs-toggle="modal">Log In</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous">
+        </script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Headline -->
+    <script>
+        var typing = new Typed(".text", {
+            strings: ["", "Web Agency", "Social Marketing"],
+            typeSpeed: 170,
+            backSpeed: 170,
+            loop: true,
+        });
+    </script>
+    <!-- Counter -->
+    <script>
+        $(window).scroll(function () {
+            var a = 0;
+            var oTop = $('.counter').offset().top - window.innerHeight;
+            console.log($('.counter').offset().top);
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.count-digit').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
+                        {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
+
+                        });
+                });
+                a = 1;
+            }
+        });
+    </script>
+    <!-- Slider -->
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 2
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+    <!-- back-to-top -->
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("back-to-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 200 ||
+                document.documentElement.scrollTop > 200
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Sticky-Header -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 200) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    // navbar_height = document.querySelector('.navbar').offsetHeight;
+                    // document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        }); 
+    </script>
+    <!-- Loader -->
+    <script>
+        $(window).on("load", function () {
+            $(".loader").delay(2000).fadeOut(400);
+            function removeLoader() {
+                $("body").removeClass("loading");
+            }
+            setInterval(removeLoader, 2300);
+        });
+    </script>
+    <!-- Wow -->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

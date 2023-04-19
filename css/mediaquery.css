@@ -1,0 +1,144 @@
+@media (max-width : 575px) {
+    header{
+        background-color: white;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .count-icon{
+        min-width: 48px;
+        height: 48px;
+    }
+    .count-no{
+        font-size: 16px;
+    }
+    .count-text p{
+        font-size: 12px;
+    }
+    .slider-img{
+        margin-top: 64px;
+    }
+    .feat-main-content{
+        padding: 0 0 24px 0;
+    }
+    .newsletter .btn-primary{
+        width: 100%;
+    }
+    .mail-box .input-box{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .newsletter .sect-title h2{
+        font-size: 30px;
+    }
+    .newsletter .news-main-box{
+        padding: 80px 16px;
+    }
+    footer{
+        font-size: 16px;
+    }
+    footer .row{
+        margin-bottom: 48px;
+    }
+    footer .row .w-4, footer .row .w-2{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
+@media (min-width : 576px) {
+    header{
+        background-color: white;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .slider-img{
+        margin-top: 64px;
+    }
+    .feat-main-content{
+        padding: 0 0 24px 0;
+    }
+    .newsletter .btn-primary{
+        width: 100%;
+    }
+    .mail-box .input-box{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .newsletter .sect-title h2{
+        font-size: 30px;
+    }
+    .newsletter .news-main-box{
+        padding: 80px 16px;
+    }
+    footer{
+        font-size: 16px;
+    }
+    footer .row{
+        margin-bottom: 48px;
+    }
+    footer .row .w-4, footer .row .w-2{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
+@media (min-width : 768px) {
+    .slider-img{
+        margin-top: 32px;
+    }
+    .newsletter .btn-primary{
+        width: 110px;
+    }
+    .mail-box .input-box{
+        width: auto;
+        margin-bottom: 0px;
+    }
+}
+@media (min-width : 992px) {
+    header{
+        background-color: #eff3f9;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .feat-main-content{
+        padding: 24px 100px 24px 0;
+    }
+    .dropdown-menu{
+        transform-origin: top;
+    }
+    .dropdown:hover .dropdown-menu{
+
+        display: block;
+    }
+    .newsletter .sect-title h2{
+        font-size: 36px;
+    }
+    .newsletter .news-main-box{
+        padding: 80px;
+    }
+    footer{
+        font-size: 18px;
+    }
+    footer .row{
+        margin-bottom: 80px;
+    }
+    footer .row .w-4{
+        width: 40%;
+        margin-bottom: 0;
+    }
+    footer .row .w-2{
+        width: 20%;
+        margin-bottom: 0;
+    }
+}
+@media (min-width : 1200px) {
+    .slider, .price{
+        background-size: contain;
+    }
+}
+@media (min-width : 1400px) {
+    footer .w-4 p{
+        padding-right: 128px;
+    }
+}
